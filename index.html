@@ -4,64 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dummy-Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Education</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact Me</li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <select>
+                <option value="home">Home</option>
+                <option value="education">Education</option>
+                <option value="project">Project</option>
+                <option value="skill">Skills</option>
+                <option value="contact">Contact Me</option>
+            </select>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="section" id="home">
             <div>
                 <img src="./images/profile-logo.png" alt="profile image">
             </div>
             <div>
-                <h2>Home</h2>
+                <h2 class="heading-1">Home</h2>
                 <p>This is a dummy description for Home section. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </section>
-        <section>
+
+        <section class="section" id="education">
             <div>
                 <img src="./images/education-img.jpeg" alt="education image">
             </div>
             <div>
-                <h2>Education</h2>
+                <h2 class="heading-2">Education</h2>
                 <p>This is a dummy description for Education section. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </section>
-        <section>
+
+        <section class="section" id="project">
             <div>
                 <img src="./images/project-img.jpeg" alt="project image">
             </div>
             <div>
-                <h2>Project</h2>
+                <h2 class="heading-3">Project</h2>
                 <p>This is a dummy description for Project section. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </section>
-        <section>
+
+        <section class="section" id="skills">
             <div>
                 <img src="./images/skills.jpeg" alt="skill image">
             </div>
             <div>
-                <h2>Skills</h2>
+                <h2 class="heading-4">Skills</h2>
                 <p>This is a dummy description for Skills section. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </section>
-        <section>
+
+        <section class="section" id="contact">
             <div>
                 <img src="./images/contact-img.jpeg" alt="contact image">
             </div>
             <div>
-                <h2>Contact</h2>
+                <h2 class="heading-5">Contact</h2>
                 <p>This is a dummy description for Contact section. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </section>

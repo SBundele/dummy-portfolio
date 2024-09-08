@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+.header > h1{
+    color: rgb(0, 188, 212);
+    text-align: center;
+}
+
+.navbar{
+    background-color: rgb(68, 68, 68);
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar > ul > li {
+    display: none;
+}
+.navbar > ul > select{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: Arial;
+}
+.navbar > ul > select > option{
+    width: 100%;
+}
+.main{
+    padding: 10px 20px 20px;
+    background-color: rgb(244, 244, 244);
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.section > div:first-child{
+    width: 338px;
+    height: 87.8px;
+    text-align: center;
+}
+.section > div:first-child > img{
+    height: 100%;
+}
+.section > div:last-child{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.heading-1{
+    color: rgb(76, 175, 80);
+}
+.heading-2{
+    color: rgb(233, 30, 99);
+}
+.heading-3{
+    color: rgb(255, 193, 7);
+}
+.heading-4{
+    color: rgb(156, 39, 176);
+}
+.heading-5{
+    color: rgb(33, 150, 243);
+}
+
+@media (min-width: 767.9px){
+    .navbar > ul{
+        margin: 10px 0;
+    }
+    .navbar > ul > select{
+        display: none;
+    }
+    .navbar > ul > li {
+        display: block;
+    }
+    .navbar > ul > li > a{
+        text-decoration: none;
+        color: white;
+    }
+    .section{
+        flex-direction: row;
+    }
+}
